@@ -1,6 +1,6 @@
 @import "../../style/settings.css";
-@import '../../style/variables';
-@import '../../style/mixins';
+@import "../../style/variables";
+@import "../../style/mixins";
 .section {
   background: $main-bg;
   height: 100vh;
@@ -8,7 +8,7 @@
   @include flex-aligh-center;
   justify-content: center;
 }
-.table{
+.table {
   &_container {
     width: 80%;
     background-color: $color-white;
@@ -19,11 +19,13 @@
     @include flex-aligh-center;
     border-bottom: 1px solid $color-light-white;
     padding: 20px 0px;
-    margin: 10px 80px;
+    margin-left: 50px;
     &_title {
-      @include font(14px,300,16px);
+      width: 15%;
+      margin: 0 10px;
+      text-align: center;
+      @include font(14px, 300, 16px);
       color: $color-grey;
-      width: 19%;
     }
     &_plus {
       padding: 10px 15px;
@@ -33,7 +35,6 @@
       font-size: 20px;
       cursor: pointer;
     }
-
   }
   &_body_user {
     @include flex-aligh-center;
@@ -45,19 +46,20 @@
     }
   }
 }
-.user{
+.user {
   &_item {
-    @include font(16px,400,19px);
-    width: 15%;
-    margin: 0 15px;
+    @include font(16px, 400, 19px);
+    width: 13%;
+    margin: 0 20px;
+    text-align: center;
   }
   &_job {
-    @include font(14px,400,16px);
+    @include font(14px, 400, 16px);
     font-style: italic;
     color: #757575;
   }
   &_name {
-    @include font(16px,400,19px);
+    @include font(16px, 400, 19px);
   }
   &_container {
     width: 16%;
@@ -67,6 +69,3 @@
     cursor: pointer;
   }
 }
-
-
-
