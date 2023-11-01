@@ -73,6 +73,7 @@
   position: relative;
 }
 .select_label {
+  width: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
