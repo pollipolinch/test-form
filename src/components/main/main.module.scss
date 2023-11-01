@@ -10,7 +10,7 @@
 }
 .table {
   &_container {
-    width: 80%;
+    width: 70%;
     background-color: $color-white;
     border-radius: 5px;
     border: 1px solid $color-light-white;
@@ -19,12 +19,11 @@
     @include flex-aligh-center;
     border-bottom: 1px solid $color-light-white;
     padding: 20px 0px;
-    margin-left: 50px;
     &_title {
+      @include font(16px, 400, 19px);
       width: 15%;
-      margin: 0 10px;
-      text-align: center;
-      @include font(14px, 300, 16px);
+      margin: 0 20px;
+      text-align: left;
       color: $color-grey;
     }
     &_plus {
@@ -40,6 +39,7 @@
     @include flex-aligh-center;
     transition: 0.5s;
     border: 1px solid $color-white;
+    padding: 5px 0;
     &:hover {
       background: #ffd2001a;
       border: 1px solid $color-border-white;
@@ -49,9 +49,9 @@
 .user {
   &_item {
     @include font(16px, 400, 19px);
-    width: 13%;
+    width: 15%;
     margin: 0 20px;
-    text-align: center;
+    text-align: left;
   }
   &_job {
     @include font(14px, 400, 16px);
@@ -62,10 +62,12 @@
     @include font(16px, 400, 19px);
   }
   &_container {
-    width: 16%;
-    margin: 12px 25px;
+    width: 15%;
+    margin: 0 20px;
+    text-align: left;
   }
   &_trash {
     cursor: pointer;
+    margin: 0 20px;
   }
 }

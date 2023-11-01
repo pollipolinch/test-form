@@ -9,7 +9,7 @@
 }
 
 .table_container {
-  width: 80%;
+  width: 70%;
   background-color: #ffffff;
   border-radius: 5px;
   border: 1px solid #eeeeee;
@@ -19,16 +19,15 @@
   align-items: center;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 0px;
-  margin-left: 50px;
 }
 .table_header_title {
-  width: 15%;
-  margin: 0 10px;
-  text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  width: 15%;
+  margin: 0 20px;
+  text-align: left;
   color: #acacac;
 }
 .table_header_plus {
@@ -44,6 +43,7 @@
   align-items: center;
   transition: 0.5s;
   border: 1px solid #ffffff;
+  padding: 5px 0;
 }
 .table_body_user:hover {
   background: rgba(255, 210, 0, 0.1019607843);
@@ -55,9 +55,9 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  width: 13%;
+  width: 15%;
   margin: 0 20px;
-  text-align: center;
+  text-align: left;
 }
 .user_job {
   font-family: "Roboto", sans-serif;
@@ -74,9 +74,11 @@
   line-height: 19px;
 }
 .user_container {
-  width: 16%;
-  margin: 12px 25px;
+  width: 15%;
+  margin: 0 20px;
+  text-align: left;
 }
 .user_trash {
   cursor: pointer;
+  margin: 0 20px;
 }/*# sourceMappingURL=main.module.css.map */
