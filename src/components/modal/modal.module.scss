@@ -1,0 +1,60 @@
+@import '../../style/variables';
+@import '../../style/mixins';
+.modal {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include flex-aligh-center;
+  justify-content: center;
+  opacity: 0;
+  width: 100%;
+  pointer-events: none;
+  transition: 0.5s;
+  &__content {
+    width: 750px;
+    background-color: white;
+    transition: 0.5s;
+    &__active {
+      width: 750px;
+      background-color: white;
+      transition: 0.5s;
+      opacity: 1;
+      pointer-events: all;
+      z-index: 2;
+      border-radius: 5px;
+    }
+  }
+  &__active {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include flex-aligh-center;
+    justify-content: center;
+    width: 100%;
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+  }
+&_container {
+  display: flex;
+  justify-content: space-between;
+  background: $color-yellow;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid #2b323b;
+}
+}
+.title {
+  @include font(24px,500,28px);
+}
+.cross {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  content: url(../../assets/img/cross.png);
+}

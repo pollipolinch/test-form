@@ -1,0 +1,65 @@
+.modal {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  width: 100%;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.modal__content {
+  width: 750px;
+  background-color: white;
+  transition: 0.5s;
+}
+.modal__content__active {
+  width: 750px;
+  background-color: white;
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+  z-index: 2;
+  border-radius: 5px;
+}
+.modal__active {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+  z-index: 2;
+}
+.modal_container {
+  display: flex;
+  justify-content: space-between;
+  background: #ffd200;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 1px solid #2b323b;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.cross {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  content: url(../../assets/img/cross.png);
+}/*# sourceMappingURL=modal.module.css.map */

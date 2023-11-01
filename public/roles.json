@@ -1,0 +1,8 @@
+[
+  { "name": "Role1", "status": true },
+  { "name": "Role2", "status": false },
+  { "name": "Role3", "status": false },
+  { "name": "Role4", "status": true },
+  { "name": "Role5", "status": false },
+  { "name": "Role6", "status": true }
+]

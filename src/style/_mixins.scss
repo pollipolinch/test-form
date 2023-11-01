@@ -1,0 +1,10 @@
+@mixin flex-aligh-center {
+    display: flex;
+    align-items: center;
+  }
+  @mixin font($font-size,$font-weight,$line-height){
+    font-family: "Roboto", sans-serif;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+  }

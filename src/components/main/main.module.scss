@@ -1,0 +1,72 @@
+@import "../../style/settings.css";
+@import '../../style/variables';
+@import '../../style/mixins';
+.section {
+  background: $main-bg;
+  height: 100vh;
+  width: 100vw;
+  @include flex-aligh-center;
+  justify-content: center;
+}
+.table{
+  &_container {
+    width: 80%;
+    background-color: $color-white;
+    border-radius: 5px;
+    border: 1px solid $color-light-white;
+  }
+  &_header {
+    @include flex-aligh-center;
+    border-bottom: 1px solid $color-light-white;
+    padding: 20px 0px;
+    margin: 10px 80px;
+    &_title {
+      @include font(14px,300,16px);
+      color: $color-grey;
+      width: 19%;
+    }
+    &_plus {
+      padding: 10px 15px;
+      background: $color-yellow;
+      border-radius: 5px;
+      color: $color-brown;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+  }
+  &_body_user {
+    @include flex-aligh-center;
+    transition: 0.5s;
+    border: 1px solid $color-white;
+    &:hover {
+      background: #ffd2001a;
+      border: 1px solid $color-border-white;
+    }
+  }
+}
+.user{
+  &_item {
+    @include font(16px,400,19px);
+    width: 15%;
+    margin: 0 15px;
+  }
+  &_job {
+    @include font(14px,400,16px);
+    font-style: italic;
+    color: #757575;
+  }
+  &_name {
+    @include font(16px,400,19px);
+  }
+  &_container {
+    width: 16%;
+    margin: 12px 25px;
+  }
+  &_trash {
+    cursor: pointer;
+  }
+}
+
+
+
